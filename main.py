@@ -18,7 +18,7 @@ def pdf2t(file_name):
 
 def text2csv(text):
     # Open the CSV file in write mode
-    with open('output.csv', mode='a', newline='') as file:
+    with open('./data/output.csv', mode='a', newline='') as file:
 
         # Create a CSV writer object
         writer = csv.writer(file)
@@ -65,8 +65,9 @@ def chatgpt(mode, input_user, input_system, key):
     
 
 
-file_name = "test.pdf"
-text = pdf2t(file_name)
+#file_name = "./data/test.pdf"
+#text = pdf2t(file_name)
+text = ''
 
 # buy a paid plan and generate a key (https://platform.openai.com/account/api-keys)
 api_key = "----"
