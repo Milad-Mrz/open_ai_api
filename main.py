@@ -72,7 +72,7 @@ text = pdf2t(file_name)
 api_key = "----"
 
 # input_user is main prompt and input_system is only used for "gpt-3.5-turbo"
-input_user = "summarize the following text into flash cards:\n\n" + text
-input_system = "You are a helpful assistant and expert in computer science."
+input_user = "summarize the following text:\n\n" + text
+input_system = "You are a helpful assistant."
 
 chatgpt("gpt-3.5-turbo", input_user, input_system, api_key)
