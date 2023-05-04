@@ -76,4 +76,5 @@ api_key = "----"
 input_user = "summarize the following text:\n\n" + text
 input_system = "You are a helpful assistant."
 
+#model can be either "text-davinci-003" or "gpt-3.5-turbo"
 chatgpt("gpt-3.5-turbo", input_user, input_system, api_key)
